@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+
+{% block title %}Tuxzilla | penguin developer{% endblock title %}
+
+{% block head %}
+<meta name="description" content="Tuxzilla T. Penguin's Official Website">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Tuxzilla | Software Dev">
+<meta property="og:description" content="cool penguin software developer">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tuxzilla.com/">
+<meta property="og:image" content="https://static.tuxzilla.com/tuxzilla1.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ get_url(path="styles.css") }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+{% endblock head %}
+
+{% block body_class %}tuxzilla{% endblock body_class %}
+
+{% block content %}
+<main>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Tuxzilla</h1>
+            <p class="hero-sub">the WORST placeholder thats ever lived</p>
+            <div class="hero-buttons">
+                <a class="button" href="/spool">see spool</a>
+                <a class="button button-ghost" href="https://tuxzilla.com/invite">join the server</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <h2>projects</h2>
+        <div class="cards">
+            <article class="card">
+                <h3>spool</h3>
+                <p>we eat files around here buddy</p>
+                <p class="meta">self-hosted</p>
+            </article>
+            <article class="card">
+                <h3>???</h3>
+                <p>brttttt</p>
+                <p class="meta">gpt make me coffee</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="team">
+        <h2>the team</h2>
+        <div class="cards">
+            <article class="card">
+                <div class="person">
+                    <img
+                        class="avatar"
+                        src="https://static.tuxzilla.com/tuxzilla1.jpg"
+                        alt="Tuxzilla's avatar"
+                    >
+                    <h3>Tuxzilla</h3>
+                </div>
+                <p class="role">ceo</p>
+            </article>
+            <article class="card">
+                <div class="avatar"></div>
+                <h3>Duckie</h3>
+                <p class="role">tester</p>
+            </article>
+            <article class="card">
+                <div class="avatar"></div>
+                <h3>Tom</h3>
+                <p class="role">designer</p>
+            </article>
+            <article class="card">
+                <div class="avatar"></div>
+                <h3>Amri</h3>
+                <p class="role">random kid</p>
+            </article>
+            <article class="card">
+                <div class="avatar"></div>
+                <h3>Dementija</h3>
+                <p class="role">random kid</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="hiring">
+        <p>funny placeholder block</p>
+    </section>
+</main>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "mainEntity": {
+        "@type": "Person",
+        "name": "Tuxzilla",
+        "alternateName": ["Tuxzilla T. Penguin", "tuxza"],
+        "jobTitle": "Software Developer",
+        "url": "https://tuxzilla.com/",
+        "sameAs": ["https://github.com/tuxza"],
+        "knowsAbout": ["Rust (Programming Language)", "Web Development", "Linux"]
+    }
+}
+</script>
+{% endblock content %}

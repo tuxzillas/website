@@ -1,0 +1,57 @@
+@use "variables" as *;
+
+.about,
+.container-left,
+.container-right {
+    border: 2px solid $accent;
+    background: $surface;
+}
+
+.about {
+    width: min(900px, 95%);
+    margin: 0 auto 2rem;
+    padding: 30px;
+    text-align: left;
+
+    p {
+        color: $text;
+        text-align: left;
+    }
+
+    a {
+        color: $link;
+        text-decoration: none;
+
+        &:hover {
+            color: $text;
+            text-decoration: underline;
+        }
+    }
+}
+
+.lots-of-containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    width: min(1300px, 95%);
+    margin: 0 auto 2rem;
+}
+
+.container-left,
+.container-right {
+    flex: 0 1 435px;
+    padding: 40px;
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li,
+    p {
+        color: $text;
+        list-style: none;
+    }
+}

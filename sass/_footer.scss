@@ -1,0 +1,82 @@
+@use "variables" as *;
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    padding: 3rem 2rem 1.5rem;
+    background: $bg;
+    border-top: 2px solid $accent;
+    position: relative;
+    z-index: 1;
+    flex-shrink: 0;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    width: min(900px, 95%);
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h4 {
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.7rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        margin: 0;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: $text;
+        text-decoration: none;
+
+        &:hover {
+            color: $link-hover;
+            text-decoration: underline;
+        }
+    }
+}
+
+.footer-bottom {
+    width: min(1200px, 95%);
+    margin: 0 auto;
+    border-top: 1px solid $accent;
+    color: $text;
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    a {
+        color: inherit;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-inner {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+}

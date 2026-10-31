@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Tuxzilla{% endblock title %}</title>
+    {% block head %}{% endblock head %}
+</head>
+<body class="{% block body_class %}{% endblock body_class %}">
+    <header class="nav">
+    <div class="nav-current-page">
+        <a href="https://tuxzilla.com/">tuxzilla.com</a>
+    </div>
+    <nav class="nav-links">
+        <a href="https://tuxzilla.com/">home</a>
+        <a href="https://github.com/tuxzillas">github</a>
+        <a href="https://tuxzilla.com/solutions">software</a>
+    </nav>
+</header>
+
+    {% block content %}{% endblock content %}
+
+    <footer>
+    <div class="footer-inner">
+        <div class="footer-col">
+            <h4>Links</h4>
+            <ul>
+                <li><a href="https://tuxzilla.com/"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="https://github.com/tuxzillas"><i class="fa-brands fa-github"></i>GitHub</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+                <li><a href="https://tuxhost.cloud"><i class="fas fa-server"></i> TuxHost</a></li>
+                <li><a href="https://status.tuxzilla.com"><i class="fas fa-server"></i> Status</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+                <li><a href="/tos"><i class="fas fa-gavel"></i> Terms of Service</a></li>
+                <li><a href="/privacy"><i class="fas fa-user-shield"></i> Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>Provided and Hosted by <a href="https://github.com/tuxza">tuxzilla</a> | Copyright Tuxzilla T. Penguin 2026</p>
+    </div>
+</footer>
+</body>
+</html>

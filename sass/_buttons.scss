@@ -1,0 +1,21 @@
+@use "variables" as *;
+
+.button {
+    display: inline-block;
+    margin: 4px 2px;
+    padding: 15px 32px;
+    border: 2px solid $accent;
+    background: $surface-alt;
+    color: $text;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 150ms ease, color 150ms ease;
+
+    &:hover,
+    &:focus-visible {
+        background: $accent;
+        color: $bg;
+    }
+}

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Tuxzilla | penguin developer{% endblock title %}
+
+{% block head %}
+<meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tuxzilla.com/">
+<meta property="og:image" content="https://static.tuxzilla.com/tuxzilla1.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ get_url(path="styles.css") }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+{% endblock head %}
+
+{% block body_class %}tuxzilla{% endblock body_class %}
+
+{% block content %}
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>404</h1>
+        <p class="hero-sub">Content Not Found</p>
+        <div class="hero-buttons">
+            <a class="button" href="https://tuxzilla.com/">go home</a>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}
