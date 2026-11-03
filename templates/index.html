@@ -11,7 +11,7 @@
 <meta property="og:url" content="https://tuxzilla.com/">
 <meta property="og:image" content="https://static.tuxzilla.com/tuxzilla1.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{{ get_url(path="styles.css") }}">
+<link rel="stylesheet" href="{{ get_url(path='styles.css') }}"> <!-- for some reason, the formatter hates this line  -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 {% endblock head %}
 
@@ -19,73 +19,65 @@
 
 {% block content %}
 <main>
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Tuxzilla</h1>
-            <p class="hero-sub">the WORST placeholder thats ever lived</p>
-            <div class="hero-buttons">
-                <a class="button" href="/spool">see spool</a>
-                <a class="button button-ghost" href="https://tuxzilla.com/invite">join the server</a>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Tuxzilla</h1>
+      <p class="hero-sub">a software company, of some sorts.</p>
+      <div class="hero-buttons">
+        <a class="button" href="/spool">see spool</a>
+        <a class="button button-ghost" href="https://tuxzilla.com/invite">join the server</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects">
+    <h2>software</h2>
+    <div class="cards">
+      <article class="project-card">
+        <h3>spool</h3>
+        <p>a speedy file sharing server</p>
+        <p class="meta">self-hosted!</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="team">
+    <h2>the team</h2>
+    <div class="cards">
+      <article class="card">
+        <div class="person">
+          <img class="avatar" src="https://github.com/tuxza.png" alt="Tuxzilla's avatar">
+          <div>
+            <h3>Tuxzilla</h3>
+            <p class="role">founder, CTO</p>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="person">
+          <img class="avatar" src="https://github.com/0dvd.png" alt="Duckie's avatar">
+          <div>
+            <h3>Duckie</h3>
+            <p class="role">developer</p>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="person">
+          <div class="person">
+            <img class="avatar" src="https://codeberg.org/AlaTomKing.png" alt="Tom's avatar">
+            <div>
+              <h3>Tom</h3>
+              <p class="role">designer</p>
             </div>
-        </div>
-    </section>
+          </div>
+      </article>
+    </div>
+  </section>
 
-    <section class="projects">
-        <h2>projects</h2>
-        <div class="cards">
-            <article class="card">
-                <h3>spool</h3>
-                <p>we eat files around here buddy</p>
-                <p class="meta">self-hosted</p>
-            </article>
-            <article class="card">
-                <h3>???</h3>
-                <p>brttttt</p>
-                <p class="meta">gpt make me coffee</p>
-            </article>
-        </div>
-    </section>
-
-    <section class="team">
-        <h2>the team</h2>
-        <div class="cards">
-            <article class="card">
-                <div class="person">
-                    <img
-                        class="avatar"
-                        src="https://static.tuxzilla.com/tuxzilla1.jpg"
-                        alt="Tuxzilla's avatar"
-                    >
-                    <h3>Tuxzilla</h3>
-                </div>
-                <p class="role">ceo</p>
-            </article>
-            <article class="card">
-                <div class="avatar"></div>
-                <h3>Duckie</h3>
-                <p class="role">tester</p>
-            </article>
-            <article class="card">
-                <div class="avatar"></div>
-                <h3>Tom</h3>
-                <p class="role">designer</p>
-            </article>
-            <article class="card">
-                <div class="avatar"></div>
-                <h3>Amri</h3>
-                <p class="role">random kid</p>
-            </article>
-            <article class="card">
-                <div class="avatar"></div>
-                <h3>Dementija</h3>
-                <p class="role">random kid</p>
-            </article>
-        </div>
-    </section>
-
-    <section class="hiring">
-        <p>funny placeholder block</p>
-    </section>
+  <section class="hiring">
+    <p>funny placeholder block</p>
+  </section>
 </main>
 
 <script type="application/ld+json">
